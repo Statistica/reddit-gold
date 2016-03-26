@@ -10,6 +10,8 @@ graph_title="Reddit Gold Given By Subreddit"
 
 x_axis_title="Subreddit"
 y_axis_title="# of Reddit Gold given"
+
+filename="popularly_gilded_subreddits.json"
 ########################
 #      End Config      #
 ########################
@@ -17,7 +19,7 @@ y_axis_title="# of Reddit Gold given"
 
 subreddits=[]
 gilds=[]
-f=open('popularly_gilded_subreddits.json', 'r')
+f=open(filename, 'r')
 for i in range(10):
 	cur_line=json.loads(f.next())
 	subreddits.append(cur_line['subreddit'])
