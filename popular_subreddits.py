@@ -1,3 +1,6 @@
+# Written by Jonathan Saewitz, released March 26th, 2016 for Statisti.ca
+# Released under the MIT License (https://opensource.org/licenses/MIT)
+
 import json, plotly.plotly as plotly, plotly.graph_objs as go
 
 ########################
