@@ -11,18 +11,18 @@ graph_title="Reddit Gold Given By Day Of Week"
 x_axis_title="Day Of Week"
 y_axis_title="# of Reddit Gold given"
 
-filename="guilds_by_day_of_week.json"
+filename="gilds_by_day_of_week.json"
 ########################
 #      End Config      #
 ########################
 
 
 weekdays=[]
-guilds=[]
+gilds=[]
 for line in open(filename, 'r'):
 	cur_line=json.loads(line)
 	weekdays.append(int(cur_line['day_of_week']))
-	guilds.append(cur_line['gilded_count'])
+	gilds.append(cur_line['gilded_count'])
 
 for i in range(len(weekdays)):
 	if weekdays[i]==1:
@@ -42,7 +42,7 @@ for i in range(len(weekdays)):
 
 trace = go.Bar(
     x = weekdays,
-    y = guilds
+    y = gilds
 )
 
 layout=go.Layout(
