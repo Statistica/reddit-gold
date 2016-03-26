@@ -14,7 +14,7 @@ y_axis_title="# of Reddit Gold given"
 
 subreddits=[]
 gilds=[]
-f=open('popularly_gilded_subs.json', 'r')
+f=open('popularly_gilded_subreddits.json', 'r')
 for i in range(10):
 	cur_line=json.loads(f.next())
 	subreddits.append(cur_line['subreddit'])
