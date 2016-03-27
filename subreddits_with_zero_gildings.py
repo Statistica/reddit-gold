@@ -6,7 +6,6 @@ import json, plotly.plotly as plotly, plotly.graph_objs as go
 ########################
 #        Config        #
 ########################
-
 graph_title="Largest Subreddits Who Have Given 0 Gold"
 
 x_axis_title="Subreddit"
